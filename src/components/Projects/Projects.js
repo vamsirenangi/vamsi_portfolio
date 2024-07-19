@@ -2,12 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import singleVendor from "../../Assets/single vendor image.jpg";
+import ott from "../../Assets/web tv screenshot.png";
+import ecommerce from "../../Assets/ecommerce image.png";
+import videoSha from "../../Assets/video-1.jpg";
 
 function Projects() {
   return (
@@ -23,68 +21,45 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={singleVendor}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Single Vendor Ecommerce Sass"
+              description="I developed a Single Vendor E-Commerce Web Application with a focus on security, responsiveness, and efficient state management. Implementing user authentication with role-based access control ensured enhanced security.The user interfaces were crafted using HTML, CSS, Bootstrap, and Tailwind CSS. Redux Toolkit was integrated for state management. I collaborated with a dynamic team to deliver a reliable and user-friendly application, and designed an admin dashboard for comprehensive control. Secure authentication mechanisms were put in place to safeguard user data and privacy. The technologies used included HTML, CSS, JavaScript, Bootstrap, React.js, Tailwind CSS, and Redux Toolkit."
+              ghLink=""
+              demoLink="Not Deployed"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={ott}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="WebTv"
+              description="WebTv is an OTT streaming platform built with Vite and React.js, utilizing a fake TMDB API to display movie and web series data. It features a user-friendly interface with a home page for popular movies, individual movie pages with details and trailers, and sections for browsing by genre and filters. A search feature helps users find specific titles quickly. Technologies used include Vite, React.js, CSS, Redux Toolkit, Vercel, and the fake TMDB API."
+              ghLink=""
+              demoLink="https://web-tv-olive.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={ecommerce}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Ecommerce Practice App"
+              description="I developed an e-commerce web application similar to Amazon and Flipkart, where users can log in, view product listings, and use search, filters, and sorting features. The app includes different pages and routes for login, products, and product details using React Router components like Route, Switch, and Link. User login state is persisted with JWT tokens stored in local storage, sent in headers for API call authorization. Technologies used include React.js, JavaScript, CSS, Bootstrap, React Router, REST API calls, local storage, and JWT tokens."
+              ghLink=""
+              demoLink="https://ecommercevr.ccbp.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={videoSha}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="vidzygram"
+              description="I collaborated on developing Vidzgram, a feature-rich video sharing app. Key contributions included implementing user authentication with role-based access control, integrating Redux Toolkit for state management, and using Material UI for a modern user interface. I developed features for posting, viewing, liking, sharing, and commenting on videos, along with real-time chat for user communication. I also designed an admin dashboard for managing user accounts, videos, and comments, ensuring secure authentication to protect user data. Technologies used were HTML, CSS, JavaScript, React.js, Material UI, and Redux Toolkit."
+              ghLink=""
+              demoLink="Still on development"
             />
           </Col>
         </Row>
